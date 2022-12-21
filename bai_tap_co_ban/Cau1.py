@@ -7,12 +7,9 @@ def check_qrime(num):
     for loop in range(2, int(num / 2) + 1):  # Một nghiệm chỉ có ước ở nửa đầu của nó
         if num % loop == 0:
             count = count + 1
-    if count > 4:
-        return False
-    elif count == 2:  # Số nguyên tố
-        return False
-    elif count == 4:
-        return True
+    if count == 4:
+        retrun True
+    return False
 
 
 if __name__ == '__main__':
